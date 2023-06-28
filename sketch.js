@@ -36,12 +36,31 @@ let aleatorio = false;;
 
 function setup() {
   createCanvas(512, 512);
-  
+  background(150);
+
   num = 3;
   inicio = true;
   saltar = false;
-  
-  background(150);
+
+  // responsive
+  document.getElementById("cont").style.backgroundColor = "rgb(200, 200, 200)";
+  document.getElementById("cont").style.width = "100vw";
+  document.getElementById("cont").style.height = "100vh";
+  document.getElementById("cont").style.margin = "0";
+  document.getElementById("cont").style.padding = "0";
+  document.getElementById("cont").style.display = "flex";
+  document.getElementById("cont").style.justifyContent = "center";
+  document.getElementById("cont").style.alignItems = "center";
+  document.getElementById("cont").style.overflow = "hidden";
+  if (windowWidth > windowHeight ) {
+    document.getElementById("defaultCanvas0").style.height = "96vh";
+    document.getElementById("defaultCanvas0").style.width = "96vh";
+    document.getElementById("defaultCanvas0").style.margin = "2vh";
+  } else {
+    document.getElementById("defaultCanvas0").style.height = "96vw";
+    document.getElementById("defaultCanvas0").style.width = "96vw";
+    document.getElementById("defaultCanvas0").style.margin = "2vw";
+  }
 }
 
 function draw() {
