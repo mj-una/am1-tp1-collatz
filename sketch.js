@@ -32,7 +32,8 @@ let p_x, p_y;
 let inicio, saltar, ciclo_A, ciclo_B;
 
 let ent_x, ent_y;
-let aleatorio = false;;
+let aleatorio = false;
+let alerta = true;
 
 function setup() {
   createCanvas(512, 512);
@@ -43,7 +44,7 @@ function setup() {
   saltar = false;
 
   // responsive
-  document.getElementById("cont").style.backgroundColor = "rgb(200, 200, 200)";
+/*document.getElementById("cont").style.backgroundColor = "rgb(200, 200, 200)";
   document.getElementById("cont").style.width = "100vw";
   document.getElementById("cont").style.height = "100vh";
   document.getElementById("cont").style.margin = "0";
@@ -60,6 +61,12 @@ function setup() {
     document.getElementById("defaultCanvas0").style.height = "96vw";
     document.getElementById("defaultCanvas0").style.width = "96vw";
     document.getElementById("defaultCanvas0").style.margin = "2vw";
+  }*/
+
+  // instrucciones
+  if (alerta) {
+    window.alert('CONTROLES:\n- click al centro para reiniciar con valores aleatorios\n- tecla "p" para pausar / reanudar\n- tecla "k" para reiniciar con valores originales\n- tecla "s" para reiniciar con valores actuales\n- tecla "w" para volver a velocidad por defecto\n- tecla "a" para disminuir velocidad\n- tecla "d" para aumentar velocidad');
+    alerta = false;
   }
 }
 
