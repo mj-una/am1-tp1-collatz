@@ -1,23 +1,40 @@
-// collatz (3n + 1)
+// conjetura de collatz (3n + 1)
 // martin julio
 // 27-6-23
 
 /*
 
-  CONTROLES:
+    CONTROLES:
   
-  - click al centro para reiniciar con valores aleatorios
+  - tecla "w" para reiniciar (sin cambiar valores)
   - tecla "p" para pausar / reanudar
-  - tecla "k" para reiniciar con valores originales
-  - tecla "s" para reiniciar con valores actuales
-  - tecla "w" para volver a velocidad por defecto
-  - tecla "a" para disminuir velocidad
-  - tecla "d" para aumentar velocidad
-
+  - tecla "o" para guardar imagen
+  
+  - tecla "1" para aumentar longitud
+  - tecla "2" para disminuir longitud
+  
+  - tecla "3" para aumentar angulo par
+  - tecla "4" para disminuir angulo par
+  
+  - tecla "5" para aumentar angulo impar
+  - tecla "6" para disminuir angulo impar
+  
+  - tecla "7" para aumentar opacidad fondo
+  - tecla "8" para disminuir opacidad fondo
+  - tecla "9" para fondo transparente
+  
+  - tecla "a" para aumentar velocidad
+  - tecla "s" para restablecer velocidad por defecto
+  - tecla "d" para disminuir velocidad
+  
+  - tecla "k" para reiniciar, restableciendo valores por defecto
+  - click al centro para reiniciar con valores aleatorios
+    (solo cambia longitud y angulos)
+    
 */
 
-
 let vel = 12;
+let opp = 0;
 
 let anguloPar = 0.24;
 let anguloImpar = -0.47;
@@ -32,8 +49,6 @@ let p_x, p_y;
 let inicio, saltar, ciclo_A, ciclo_B;
 
 let ent_x, ent_y;
-let aleatorio = false;
-let alerta = true;
 
 function setup() {
   createCanvas(512, 512);
@@ -44,7 +59,7 @@ function setup() {
   saltar = false;
 
   // responsive
-/*document.getElementById("cont").style.backgroundColor = "rgb(200, 200, 200)";
+  document.getElementById("cont").style.backgroundColor = "rgb(200, 200, 200)";
   document.getElementById("cont").style.width = "100vw";
   document.getElementById("cont").style.height = "100vh";
   document.getElementById("cont").style.margin = "0";
@@ -56,34 +71,32 @@ function setup() {
   if (windowWidth > windowHeight ) {
     document.getElementById("defaultCanvas0").style.height = "96vh";
     document.getElementById("defaultCanvas0").style.width = "96vh";
-    document.getElementById("defaultCanvas0").style.margin = "2vh";
+    document.getElementById("defaultCanvas0").style.margin = "0 2vh";
   } else {
     document.getElementById("defaultCanvas0").style.height = "96vw";
     document.getElementById("defaultCanvas0").style.width = "96vw";
-    document.getElementById("defaultCanvas0").style.margin = "2vw";
-  }*/
-
-  // instrucciones
-  if (alerta) {
-    window.alert('CONTROLES:\n- click al centro para reiniciar con valores aleatorios\n- tecla "p" para pausar / reanudar\n- tecla "k" para reiniciar con valores originales\n- tecla "s" para reiniciar con valores actuales\n- tecla "w" para volver a velocidad por defecto\n- tecla "a" para disminuir velocidad\n- tecla "d" para aumentar velocidad');
-    alerta = false;
+    document.getElementById("defaultCanvas0").style.margin = "0 2vw";
   }
+
 }
 
 function draw() {
-  // VEL _________________________________________________
-  for (let i = 0; i < 100 * vel; i++) {
+  resetMatrix();
+  fill(150, opp);
+  rect(0, 0, width, height);
 
+  // velocidad
+  for (let i = 0; i < 100 * vel + 1; i++) {
     // evaluadores estado
     if (Number.MAX_VALUE < 2 + 3 * sec_A) saltar = true;
     else saltar = false;
-    
+
     if (sec_A > 1) ciclo_A = true;
     else ciclo_A = false;
 
     if (sec_B > 1) ciclo_B = true;
     else ciclo_B = false;
-    
+
     // nuevo numero
     if (inicio) {
       sec_A = num;
@@ -91,13 +104,12 @@ function draw() {
       angulo_A = angulo_B = 0;
       pasos_A = pasos_B = 0;
       p_x = width / 2;
-      p_y = p_x;//height * 0.9;
+      p_y = p_x; //height * 0.9;
       inicio = false;
     }
 
     // COLLATZ A
     else if (ciclo_A && !saltar) {
-
       // caso par
       if (sec_A % 2 == 0) {
         sec_A = sec_A / 2;
@@ -108,7 +120,7 @@ function draw() {
         sec_A = 3 * sec_A + 1;
         angulo_A += anguloImpar;
       }
-      
+
       resetMatrix();
       translate(p_x, p_y);
       stroke(255, 40);
@@ -116,10 +128,9 @@ function draw() {
       p_x += cos(angulo_A) * long;
       p_y -= sin(angulo_A) * long;
     }
-    
+
     // COLLATZ B
     else if (ciclo_B && !saltar) {
-
       // caso par
       if (sec_B % 2 == 0) {
         sec_B = sec_B / 2;
@@ -130,7 +141,7 @@ function draw() {
         sec_B = 3 * sec_B + 1;
         angulo_B -= anguloImpar;
       }
-      
+
       resetMatrix();
       translate(p_x, p_y);
       stroke(0, 50);
@@ -147,9 +158,12 @@ function draw() {
     }
   }
 
+  // mouse
   if (dist(mouseX, mouseY, 256, 256) < 30) cursor(HAND);
   else cursor(CROSS);
 }
+
+////////////////////////////////////////////////
 
 function mousePressed() {
   push();
@@ -164,21 +178,44 @@ function mousePressed() {
 }
 
 function keyPressed() {
-  if (key == 'w' || key == 'W') vel = 15;
-  if (key == 'd' || key == 'D') vel += vel / 2;
-  if (key == 'a' || key == 'A') {
-    if (vel <= 1) vel = 1; 
+  if (key == "1" || keyCode == 49) long += 0.1;
+  if (key == "2" || keyCode == 50) long -= 0.1;
+
+  if (key == "3" || keyCode == 51) anguloPar += 0.02;
+  if (key == "4" || keyCode == 52) anguloPar -= 0.02;
+
+  if (key == "5" || keyCode == 53) anguloImpar += 0.02;
+  if (key == "6" || keyCode == 54) anguloImpar -= 0.02;
+
+  if (key == "7" || keyCode == 55) {
+    if (opp >= 255) opp = 255;
+    else opp += 1;
+  }
+  if (key == "8" || keyCode == 56) {
+    if (opp <= 0) opp = 0;
+    else opp -= 1;
+  }
+  if (key == "9" || keyCode == 57) opp = 0;
+
+  if (key == "s" || key == "S") vel = 15;
+  if (key == "a" || key == "A") vel += vel / 2;
+  if (key == "d" || key == "D") {
+    if (vel <= 0) vel = 0;
     else vel -= vel / 2;
   }
-  if (key == 's' || key == 'S') setup();
-  if (key == 'k' || key == 'K') {
+
+  if (key == "w" || key == "W") setup();
+  if (key == "k" || key == "K") {
     vel = 15;
     anguloPar = 0.24;
     anguloImpar = -0.47;
     long = 1.9;
+    opp = 0;
     setup();
   }
-  if (key == 'p' || key == 'P') {
+
+  if (key == "o" || key == "O") save("collatz.png");
+  if (key == "p" || key == "P") {
     if (isLooping()) noLoop();
     else loop();
   }
