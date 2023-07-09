@@ -81,7 +81,7 @@ function setup() {
 function draw() {
   resetMatrix();
   fill(150, opp);
-  rect(0, 0, width, height);
+  rect(-2, -2, width + 4, height + 4);
 
   // velocidad
   for (let i = 0; i < 100 * vel + 1; i++) {

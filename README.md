@@ -71,3 +71,5 @@ _______________________________________________________
 <br>
 
 (*) Las reglas son las siguientes: a partir de un número entero cualquiera distinto de 0, evaluar si es par o no. En caso par dividir por 2. En caso impar multiplicar por 3 y sumar 1. Volver a aplicar las mismas instrucciones sobre el resultado obtenido.
+
+<br>
