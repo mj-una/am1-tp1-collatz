@@ -2,9 +2,9 @@
 
 <br>
 
-"**w**" para reiniciar (sin cambiar valores)  
-"**p**" para pausar / reanudar  
-"**o**" para guardar imagen
+"**W**" para reiniciar (sin cambiar valores)  
+"**P**" para pausar / reanudar  
+"**O**" para guardar imagen
 
 <br>
 
@@ -29,13 +29,13 @@
 
 <br>
 
-"**a**" para aumentar velocidad  
-"**s**" para restablecer velocidad por defecto  
-"**d**" para disminuir velocidad
+"**A**" para aumentar velocidad  
+"**S**" para restablecer velocidad por defecto  
+"**D**" para disminuir velocidad
 
 <br>
 
-"**k**" para reiniciar, restableciendo valores por defecto  
+"**K**" para reiniciar, restableciendo valores por defecto  
 "click al centro" para reiniciar con valores aleatorios (solo cambia longitud y angulos)
 
 <br>
