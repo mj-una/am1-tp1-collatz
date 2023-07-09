@@ -2,9 +2,7 @@
 // martin julio
 // 27-6-23
 
-/*
-
-    CONTROLES:
+  /*CONTROLES:
   
   - tecla "w" para reiniciar (sin cambiar valores)
   - tecla "p" para pausar / reanudar
