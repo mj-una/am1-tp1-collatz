@@ -58,19 +58,16 @@ En la complejidad habitan todas las formas. Ser humano es una restricción con f
 
 <br>
 
-### Bibliografía
+***
+
+<br>
+
+## Bibliografía
 
 <br>
 
 HEINICH, Nathalie. (2014). _"La obra más allá del objeto"_. en El
 paradigma del arte contemporáneo: estructuras de una revolución artística.
 Madrid: Casimiro, pp. 95-119. (DAA: 39m)
-
-<br>
-_______________________________________________________
-
-<br>
-
-(*) Las reglas son las siguientes: a partir de un número entero cualquiera distinto de 0, evaluar si es par o no. En caso par dividir por 2. En caso impar multiplicar por 3 y sumar 1. Volver a aplicar las mismas instrucciones sobre el resultado obtenido.
 
 <br>
