@@ -1,3 +1,4 @@
+// oesa
 // conjetura de collatz (3n + 1)
 // martin julio
 // 27-6-23
@@ -49,36 +50,20 @@ let inicio, saltar, ciclo_A, ciclo_B;
 let ent_x, ent_y;
 
 function setup() {
-  createCanvas(512, 512);
+
+  let canvas = createCanvas(512, 512);
+  canvas.style('user-select', 'none');
+  canvas.style('touch-action', 'manipulation');
+  
   background(150);
 
   num = 3;
   inicio = true;
   saltar = false;
-
-  // responsive
-  document.getElementById("cont").style.backgroundColor = "rgb(200, 200, 200)";
-  document.getElementById("cont").style.width = "100vw";
-  document.getElementById("cont").style.height = "100vh";
-  document.getElementById("cont").style.margin = "0";
-  document.getElementById("cont").style.padding = "0";
-  document.getElementById("cont").style.display = "flex";
-  document.getElementById("cont").style.justifyContent = "center";
-  document.getElementById("cont").style.alignItems = "center";
-  document.getElementById("cont").style.overflow = "hidden";
-  if (windowWidth > windowHeight ) {
-    document.getElementById("defaultCanvas0").style.height = "96vh";
-    document.getElementById("defaultCanvas0").style.width = "96vh";
-    document.getElementById("defaultCanvas0").style.margin = "0 2vh";
-  } else {
-    document.getElementById("defaultCanvas0").style.height = "96vw";
-    document.getElementById("defaultCanvas0").style.width = "96vw";
-    document.getElementById("defaultCanvas0").style.margin = "0 2vw";
-  }
-
 }
 
 function draw() {
+
   resetMatrix();
   fill(150, opp);
   noStroke();
@@ -87,7 +72,7 @@ function draw() {
   // velocidad
   for (let i = 0; i < 100 * vel + 1; i++) {
     // evaluadores estado
-    if (Number.MAX_VALUE < 2 + 3 * sec_A) saltar = true;
+    if (Number.MAX_VALUE < sec_A * 3 + 2) saltar = true;
     else saltar = false;
 
     if (sec_A > 1) ciclo_A = true;
@@ -158,19 +143,19 @@ function draw() {
   }
 
   // mouse
-  if (dist(mouseX, mouseY, 256, 256) < 30) cursor(HAND);
+  if (dist(mouseX, mouseY, 256, 256) < 45) cursor(HAND);
   else cursor(CROSS);
 }
 
 ////////////////////////////////////////////////
 
-function mousePressed() {
+function touchEnded() {
   push();
   resetMatrix();
-  if (dist(mouseX, mouseY, 256, 256) < 30) {
-    anguloPar = random(0.2, 0.5);
-    anguloImpar = random(-0.4, 0.3);
-    long = random(1.5, 3);
+  if (dist(mouseX, mouseY, 256, 256) < 45) {
+    anguloPar = random(2 * PI);
+    anguloImpar = random(2 * PI);
+    long = random(1.5, 50);
     setup();
   }
   pop();

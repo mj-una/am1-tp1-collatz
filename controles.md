@@ -2,6 +2,10 @@
 
 <br>
 
+"Click" en el centro para explorar otras formas (cambia longitud y angulos aleatoriamente)
+
+<br>
+
 "**W**" para reiniciar (sin cambiar valores)  
 "**P**" para pausar / reanudar  
 "**O**" para guardar imagen
@@ -36,7 +40,6 @@
 <br>
 
 "**K**" para reiniciar, restableciendo valores por defecto  
-"click al centro" para reiniciar con valores aleatorios (solo cambia longitud y angulos)
 
 <br>
 
