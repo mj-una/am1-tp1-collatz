@@ -1,8 +1,9 @@
+// oesa
 // conjetura de collatz (3n + 1)
 // martin julio
 // 27-6-23
 
-  /*CONTROLES:
+/*CONTROLES:
   
   - tecla "w" para reiniciar (sin cambiar valores)
   - tecla "p" para pausar / reanudar
@@ -49,173 +50,175 @@ let inicio, saltar, ciclo_A, ciclo_B;
 let ent_x, ent_y;
 
 function setup() {
-  createCanvas(512, 512);
-  background(150);
+    let canvas = createCanvas(512, 512);
+    canvas.style("user-select", "none"); // para que no seleccione el texto al clickear doble
+    canvas.style("touch-action", "manipulation"); // para que no haga zoom al tocar doble en el celu
+    windowResized();
+  
+    background(150);
 
-  num = 3;
-  inicio = true;
-  saltar = false;
-
-  // responsive
-  document.getElementById("cont").style.backgroundColor = "rgb(200, 200, 200)";
-  document.getElementById("cont").style.width = "100vw";
-  document.getElementById("cont").style.height = "100vh";
-  document.getElementById("cont").style.margin = "0";
-  document.getElementById("cont").style.padding = "0";
-  document.getElementById("cont").style.display = "flex";
-  document.getElementById("cont").style.justifyContent = "center";
-  document.getElementById("cont").style.alignItems = "center";
-  document.getElementById("cont").style.overflow = "hidden";
-  if (windowWidth > windowHeight ) {
-    document.getElementById("defaultCanvas0").style.height = "96vh";
-    document.getElementById("defaultCanvas0").style.width = "96vh";
-    document.getElementById("defaultCanvas0").style.margin = "0 2vh";
-  } else {
-    document.getElementById("defaultCanvas0").style.height = "96vw";
-    document.getElementById("defaultCanvas0").style.width = "96vw";
-    document.getElementById("defaultCanvas0").style.margin = "0 2vw";
-  }
-
+    num = 3;
+    inicio = true;
+    saltar = false;
 }
 
 function draw() {
-  resetMatrix();
-  fill(150, opp);
-  noStroke();
-  rect(0, 0, width, height);
+    resetMatrix();
+    fill(150, opp);
+    noStroke();
+    rect(0, 0, width, height);
 
-  // velocidad
-  for (let i = 0; i < 100 * vel + 1; i++) {
-    // evaluadores estado
-    if (Number.MAX_VALUE < 2 + 3 * sec_A) saltar = true;
-    else saltar = false;
+    // velocidad
+    for (let i = 0; i < 100 * vel + 1; i++) {
+        // evaluadores estado
+        if (Number.MAX_VALUE < sec_A * 3 + 2) saltar = true;
+        else saltar = false;
 
-    if (sec_A > 1) ciclo_A = true;
-    else ciclo_A = false;
+        if (sec_A > 1) ciclo_A = true;
+        else ciclo_A = false;
 
-    if (sec_B > 1) ciclo_B = true;
-    else ciclo_B = false;
+        if (sec_B > 1) ciclo_B = true;
+        else ciclo_B = false;
 
-    // nuevo numero
-    if (inicio) {
-      sec_A = num;
-      sec_B = num;
-      angulo_A = angulo_B = 0;
-      pasos_A = pasos_B = 0;
-      p_x = width / 2;
-      p_y = p_x; //height * 0.9;
-      inicio = false;
+        // nuevo numero
+        if (inicio) {
+            sec_A = num;
+            sec_B = num;
+            angulo_A = angulo_B = 0;
+            pasos_A = pasos_B = 0;
+            p_x = width / 2;
+            p_y = p_x; //height * 0.9;
+            inicio = false;
+        }
+
+        // COLLATZ A
+        else if (ciclo_A && !saltar) {
+            // caso par
+            if (sec_A % 2 == 0) {
+                sec_A = sec_A / 2;
+                angulo_A += anguloPar;
+            }
+            // caso impar
+            else {
+                sec_A = 3 * sec_A + 1;
+                angulo_A += anguloImpar;
+            }
+
+            resetMatrix();
+            translate(p_x, p_y);
+            stroke(255, 40);
+            line(0, 0, cos(angulo_A) * long, -sin(angulo_A) * long);
+            p_x += cos(angulo_A) * long;
+            p_y -= sin(angulo_A) * long;
+        }
+
+        // COLLATZ B
+        else if (ciclo_B && !saltar) {
+            // caso par
+            if (sec_B % 2 == 0) {
+                sec_B = sec_B / 2;
+                angulo_B -= anguloPar;
+            }
+            // caso impar
+            else {
+                sec_B = 3 * sec_B + 1;
+                angulo_B -= anguloImpar;
+            }
+
+            resetMatrix();
+            translate(p_x, p_y);
+            stroke(0, 50);
+            line(0, 0, -cos(angulo_B) * long, -sin(angulo_B) * long);
+            p_x -= cos(angulo_B) * long;
+            p_y -= sin(angulo_B) * long;
+        }
+
+        // fin numero
+        else {
+            num++;
+            saltar = false;
+            inicio = true;
+        }
     }
 
-    // COLLATZ A
-    else if (ciclo_A && !saltar) {
-      // caso par
-      if (sec_A % 2 == 0) {
-        sec_A = sec_A / 2;
-        angulo_A += anguloPar;
-      }
-      // caso impar
-      else {
-        sec_A = 3 * sec_A + 1;
-        angulo_A += anguloImpar;
-      }
-
-      resetMatrix();
-      translate(p_x, p_y);
-      stroke(255, 40);
-      line(0, 0, cos(angulo_A) * long, -sin(angulo_A) * long);
-      p_x += cos(angulo_A) * long;
-      p_y -= sin(angulo_A) * long;
-    }
-
-    // COLLATZ B
-    else if (ciclo_B && !saltar) {
-      // caso par
-      if (sec_B % 2 == 0) {
-        sec_B = sec_B / 2;
-        angulo_B -= anguloPar;
-      }
-      // caso impar
-      else {
-        sec_B = 3 * sec_B + 1;
-        angulo_B -= anguloImpar;
-      }
-
-      resetMatrix();
-      translate(p_x, p_y);
-      stroke(0, 50);
-      line(0, 0, -cos(angulo_B) * long, -sin(angulo_B) * long);
-      p_x -= cos(angulo_B) * long;
-      p_y -= sin(angulo_B) * long;
-    }
-
-    // fin numero
-    else {
-      num++;
-      saltar = false;
-      inicio = true;
-    }
-  }
-
-  // mouse
-  if (dist(mouseX, mouseY, 256, 256) < 30) cursor(HAND);
-  else cursor(CROSS);
+    // mouse
+    if (dist(mouseX, mouseY, 256, 256) < 45) cursor(HAND);
+    else cursor(CROSS);
 }
 
 ////////////////////////////////////////////////
 
-function mousePressed() {
-  push();
-  resetMatrix();
-  if (dist(mouseX, mouseY, 256, 256) < 30) {
-    anguloPar = random(0.2, 0.5);
-    anguloImpar = random(-0.4, 0.3);
-    long = random(1.5, 3);
-    setup();
-  }
-  pop();
+function touchEnded() {
+    push();
+    resetMatrix();
+    if (dist(mouseX, mouseY, 256, 256) < 45) {
+        anguloPar = random(2 * PI);
+        anguloImpar = random(2 * PI);
+        long = random(1.5, 50);
+        setup();
+    }
+    pop();
 }
 
 function keyPressed() {
-  if (key == "1" || keyCode == 49) long += 0.1;
-  if (key == "2" || keyCode == 50) long -= 0.1;
+    if (key == "1" || keyCode == 49) long += 0.1;
+    if (key == "2" || keyCode == 50) long -= 0.1;
 
-  if (key == "3" || keyCode == 51) anguloPar += 0.02;
-  if (key == "4" || keyCode == 52) anguloPar -= 0.02;
+    if (key == "3" || keyCode == 51) anguloPar += 0.02;
+    if (key == "4" || keyCode == 52) anguloPar -= 0.02;
 
-  if (key == "5" || keyCode == 53) anguloImpar += 0.02;
-  if (key == "6" || keyCode == 54) anguloImpar -= 0.02;
+    if (key == "5" || keyCode == 53) anguloImpar += 0.02;
+    if (key == "6" || keyCode == 54) anguloImpar -= 0.02;
 
-  if (key == "7" || keyCode == 55) {
-    if (opp >= 255) opp = 255;
-    else opp += 1;
-  }
-  if (key == "8" || keyCode == 56) {
-    if (opp <= 0) opp = 0;
-    else opp -= 1;
-  }
-  if (key == "9" || keyCode == 57) opp = 0;
+    if (key == "7" || keyCode == 55) {
+        if (opp >= 255) opp = 255;
+        else opp += 1;
+    }
+    if (key == "8" || keyCode == 56) {
+        if (opp <= 0) opp = 0;
+        else opp -= 1;
+    }
+    if (key == "9" || keyCode == 57) opp = 0;
 
-  if (key == "s" || key == "S") vel = 15;
-  if (key == "a" || key == "A") vel += vel / 2;
-  if (key == "d" || key == "D") {
-    if (vel <= 0) vel = 0;
-    else vel -= vel / 2;
-  }
+    if (key == "s" || key == "S") vel = 15;
+    if (key == "a" || key == "A") vel += vel / 2;
+    if (key == "d" || key == "D") {
+        if (vel <= 0) vel = 0;
+        else vel -= vel / 2;
+    }
 
-  if (key == "w" || key == "W") setup();
-  if (key == "k" || key == "K") {
-    vel = 15;
-    anguloPar = 0.24;
-    anguloImpar = -0.47;
-    long = 1.9;
-    opp = 0;
-    setup();
-  }
+    if (key == "w" || key == "W") setup();
+    if (key == "k" || key == "K") {
+        vel = 15;
+        anguloPar = 0.24;
+        anguloImpar = -0.47;
+        long = 1.9;
+        opp = 0;
+        setup();
+    }
 
-  if (key == "o" || key == "O") save("collatz.png");
-  if (key == "p" || key == "P") {
-    if (isLooping()) noLoop();
-    else loop();
+    if (key == "o" || key == "O") save("collatz.png");
+    if (key == "p" || key == "P") {
+        if (isLooping()) noLoop();
+        else loop();
+    }
+}
+
+function windowResized() {
+  const pg = document.getElementById("pg");
+  const cnv = document.getElementById("defaultCanvas0");
+  pg.style.backgroundColor = "rgb(200,200,200)";
+  pg.style.display = "flex";
+  pg.style.justifyContent = "center";
+  pg.style.alignItems = "center";
+  pg.style.overflow = "hidden";
+  pg.style.width = "100vw";
+  pg.style.height = "100vh";
+  if (windowWidth > windowHeight ) {
+    cnv.style.height = "96vh";
+    cnv.style.width = "96vh";
+  } else {
+    cnv.style.height = "96vw";
+    cnv.style.width = "96vw";
   }
 }
