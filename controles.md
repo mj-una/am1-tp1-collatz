@@ -34,13 +34,16 @@
 
 <br>
 
-"**W**" para reiniciar (sin cambiar valores)  
-"**P**" para pausar / reanudar  
-"**O**" para guardar imagen
+"**W**" para reiniciar, sin cambiar valores  
 
 <br>
 
 "**K**" para reiniciar, restableciendo valores por defecto  
+
+<br>
+
+"**P**" para pausar / reanudar  
+"**O**" para guardar imagen
 
 <br>
 
