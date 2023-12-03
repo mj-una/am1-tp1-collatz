@@ -22,7 +22,7 @@ Martin Julio
 
 <br>
 
-### Descripción
+### Presentación
 
 <br>
 
@@ -34,7 +34,7 @@ Rescato la experimentación como única forma posible de expresión, ya sea medi
 
 <br>
 
-### Desarrollo
+### Problema
 
 <br>
 
