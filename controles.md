@@ -2,13 +2,8 @@
 
 <br>
 
-"Click" en el centro para explorar otras formas (cambia longitud y angulos aleatoriamente)
-
-<br>
-
-"**W**" para reiniciar (sin cambiar valores)  
-"**P**" para pausar / reanudar  
-"**O**" para guardar imagen
+"Click" en el centro para explorar otras formas
+<br>(cambia longitud y angulos aleatoriamente)
 
 <br>
 
@@ -36,6 +31,12 @@
 "**A**" para aumentar velocidad  
 "**S**" para restablecer velocidad por defecto  
 "**D**" para disminuir velocidad
+
+<br>
+
+"**W**" para reiniciar (sin cambiar valores)  
+"**P**" para pausar / reanudar  
+"**O**" para guardar imagen
 
 <br>
 
