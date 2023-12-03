@@ -87,6 +87,8 @@ La espiral se expande, no se detiene nunca. Lo humano como concepto es un dispos
 
 <br>
 
+BOU, Luis César. (2007). _"África y la historia"_. Editorial Último Recurso. Fuente: <a href="http://www.ceid.edu.ar/librosdigitales/africa_y_la_historia_luis_cesar_bou.pdf">http://www.ceid.edu.ar/librosdigitales/africa_y_la_historia_luis_cesar_bou.pdf</a>
+
 HEINICH, Nathalie. (2014). _"La obra más allá del objeto"_. en El
 paradigma del arte contemporáneo: estructuras de una revolución artística.
 Madrid: Casimiro, pp. 95-119. (DAA: 39m)
@@ -94,7 +96,5 @@ Madrid: Casimiro, pp. 95-119. (DAA: 39m)
 RODNEY, Walter. (1972). _"Cómo Europa subdesarrolló al África"_. Capítulo Cuatro.
 Europa y las raíces del subdesarrollo africano –hasta 1885. Traducción: Luis César Bou.
 Fuente: <a href="https://www.geocities.ws/obserflictos/rodney.html">https://www.geocities.ws/obserflictos/rodney.html</a>
-
-BOU, Luis César. (2007). _"África y la historia"_. Editorial Último Recurso. Fuente: <a href="http://www.ceid.edu.ar/librosdigitales/africa_y_la_historia_luis_cesar_bou.pdf">http://www.ceid.edu.ar/librosdigitales/africa_y_la_historia_luis_cesar_bou.pdf</a>
 
 <br>
