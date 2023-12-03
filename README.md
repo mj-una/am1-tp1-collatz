@@ -56,6 +56,8 @@ La historia es ficción, un subproducto del ejercicio del poder. La memoria est�
 
 En la complejidad habitan todas las formas, nada es completamente asimilable. Ser humano es una restricción con forma de espiral, un camino circular, una conjetura incomprobable. La realidad desborda todo límite, toda categoría, no pertenece a nada. Solo queda sentir, solo se conoce en la experiencia.
 
+<br>
+
 _Buenos Aires, 2023_
 
 <br>
