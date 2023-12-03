@@ -14,7 +14,7 @@ Martin Julio
 
 * visualización web <a href="https://mj-una.github.io/am1-tp1-collatz/" target="_blank" rel="noopener">github-pages</a>
 
-* código expicado <a href="https://editor.p5js.org/martin_julio/sketches/dw8EZzpSH" target="_blank" rel="noopener">editor-p5js</a>
+* código expicado <a href="https://editor.p5js.org/martin_julio/sketches/bnuPDME8h" target="_blank" rel="noopener">editor-p5js</a>
 
 <br>
 
