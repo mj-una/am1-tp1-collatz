@@ -53,10 +53,10 @@ Me atrae este problema porque deja ver un rastro sobre lo antropocéntrico que e
 La espiral se expande, no se detiene nunca. Lo humano como concepto es un dispositivo de ocupación colonial porque, al ser una medida arbitraria, para su uso se necesita de un constante proceso de aprendizaje (acceder al conocimiento es una actividad laboral). Así se crean vínculos de escasez, la historicidad se le otorga solamente a quién se le reconozca humanidad. Así el saber institucional legitimiza su autoridad y escribe encima de relatos ajenos. Así se devalúa la producción de identidad, la imaginación de los territorios ocupados y se establecen las bases de un comercio rentable (extractivismo). El conocimiento como doctrina y el progreso como fe son adaptaciones funcionales a la naturalización del capitalismo cultural.
 
 <div align="center">
-La historia es ficción, un subproducto del ejercicio del poder. La memoria está mil veces sobrescrita, lo entendible está restringido.<br>Pero no somos solamente humanos. No existe solamente lo que entendemos. Olvidar es aprender sobre lo inentendible.
+La historia es ficción, un subproducto del ejercicio del poder. La memoria está mil veces sobrescrita, lo entendible está restringido.<br>Pero no somos únicamente humanos. No existe únicamente lo que entendemos. Olvidar es aprender sobre lo inentendible.
 <br>
 <br>
-En la complejidad habitan todas las formas, nada es completamente asimilable.
+En la complejidad habitan todas las formas, nada es por completo asimilable.
 <br>Ser humano es una restricción con forma de espiral, un camino circular, una conjetura incomprobable.
 <br>
 <br>
