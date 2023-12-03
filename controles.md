@@ -53,8 +53,8 @@
 
 * volver a <a href="https://github.com/mj-una/am1-tp1-collatz/blob/main/README.md">readme</a>
 
-* abrir en <a href="https://mj-una.github.io/am1-tp1-collatz/" target="_blank" rel="noopener">github-pages</a>
+* visualización web <a href="https://mj-una.github.io/am1-tp1-collatz/" target="_blank" rel="noopener">github-pages</a>
 
-* abrir en <a href="https://editor.p5js.org/martin_julio/sketches/dw8EZzpSH" target="_blank" rel="noopener">editor-p5js</a>
+* código expicado <a href="https://editor.p5js.org/martin_julio/sketches/dw8EZzpSH" target="_blank" rel="noopener">editor-p5js</a>
 
 <br>
