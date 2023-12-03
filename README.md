@@ -74,7 +74,8 @@ La espiral se expande, no se detiene nunca. Lo humano como concepto es un dispos
 <br>
 <br>
 <br>
-<i>Buenos Aires, 2023</i>
+<i>Buenos Aires
+<br>Junio de 2023</i>
 </div>
 <br>
 
