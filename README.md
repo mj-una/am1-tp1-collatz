@@ -12,9 +12,9 @@ Martin Julio
 
 * ver <a href="https://github.com/mj-una/am1-tp1-collatz/blob/main/controles.md">controles</a>
 
-* abrir en <a href="https://mj-una.github.io/am1-tp1-collatz/" target="_blank" rel="noopener">github-pages</a>
+* visualización web <a href="https://mj-una.github.io/am1-tp1-collatz/" target="_blank" rel="noopener">github-pages</a>
 
-* abrir en <a href="https://editor.p5js.org/martin_julio/sketches/dw8EZzpSH" target="_blank" rel="noopener">editor-p5js</a>
+* codigo expicado <a href="https://editor.p5js.org/martin_julio/sketches/dw8EZzpSH" target="_blank" rel="noopener">editor-p5js</a>
 
 <br>
 
@@ -53,30 +53,29 @@ Me atrae este problema porque deja ver un rastro sobre lo antropocéntrico que e
 La espiral se expande, no se detiene nunca. Lo humano como concepto es un dispositivo de ocupación colonial porque, al ser una medida arbitraria, para su uso se necesita de un constante proceso de aprendizaje (acceder al conocimiento se vuelve una actividad laboral). Así se crean vínculos de escasez, la historicidad se le otorga solamente a quién se le reconozca humanidad. Así el saber institucional legitimiza su autoridad y escribe encima de relatos ajenos. Así se devalúa la producción de identidad, la imaginación de los territorios ocupados, y se establecen las bases de un comercio rentable (extractivismo). El conocimiento como doctrina y el progreso como fe son adaptaciones funcionales a la naturalización del capitalismo en la cultura.
 
 <div align="center">
-<br>La historia es ficción, un subproducto del ejercicio del poder.
-<br>La memoria está mil veces sobrescrita, lo entendible está restringido.
-<br>Pero no somos únicamente humanos. No existe únicamente lo que entendemos.
-<br>Olvidar es aprender sobre lo inentendible.
+<br>§ La historia es ficción, un subproducto del ejercicio del poder.
+<br>§ La memoria está mil veces sobrescrita, lo entendible está restringido;
+<br>pero no somos únicamente humanos, no existe únicamente lo que entendemos.
+<br>§ Olvidar es aprender sobre lo inentendible.
 <br>
 <br>
-<br>En la complejidad habitan todas las formas, nada es por completo asimilable.
-<br>Ser humano es una restricción con forma de espiral,
+<br>§ En la complejidad habitan todas las formas, nada es por completo asimilable.
+<br>§ Ser humano es una restricción con forma de espiral,
 <br>un camino circular, una conjetura incomprobable.
 <br>
 <br>
-<br>La realidad desborda todo límite, toda categoría,
+<br>§ La realidad desborda todo límite, toda categoría,
 <br>no pertenece a nada.
 <br>
 <br>
-<br>Solo queda sentir,
+<br>§ Solo queda sentir,
 <br>solo se conoce en la experiencia.
+<br>
 <br>
 <br>
 <br>
 <i>Buenos Aires, 2023</i>
 </div>
-<br>
-<br>
 <br>
 
 ***
