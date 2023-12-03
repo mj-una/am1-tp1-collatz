@@ -51,7 +51,7 @@
 
 <br>
 
-* volver a <a href="https://github.com/mj-una/am1-tp1-collatz/blob/main/README.md">readme</a>
+* volver a <a href="https://github.com/mj-una/am1-tp1-collatz#am1-tp1---representacion-interactiva-de-la-conjetura-de-collatz">inicio</a>
 
 * visualización web <a href="https://mj-una.github.io/am1-tp1-collatz/" target="_blank" rel="noopener">github-pages</a>
 
