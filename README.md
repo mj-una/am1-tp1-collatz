@@ -70,8 +70,8 @@ HEINICH, Nathalie. (2014). _"La obra más allá del objeto"_. en El
 paradigma del arte contemporáneo: estructuras de una revolución artística.
 Madrid: Casimiro, pp. 95-119. (DAA: 39m)
 
-RODNEY, Walter. (1972). _"Cómo Europa subdesarrolló al África"_. Traducción: Luis César Bou.
-Capítulo Cuatro. Europa y las raíces del subdesarrollo africano –hasta 1885.
-<a href="https://www.geocities.ws/obserflictos/rodney.html">https://www.geocities.ws/obserflictos/rodney.html</a>
+RODNEY, Walter. (1972). _"Cómo Europa subdesarrolló al África"_. Capítulo Cuatro.
+Europa y las raíces del subdesarrollo africano –hasta 1885. Traducción: Luis César Bou.
+Fuente: <a href="https://www.geocities.ws/obserflictos/rodney.html">https://www.geocities.ws/obserflictos/rodney.html</a>
 
 <br>
