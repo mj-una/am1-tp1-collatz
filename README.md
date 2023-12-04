@@ -30,7 +30,7 @@ Leí de Nathalie Heinich una colección de proezas de gente en Europa y Estados 
 
 Jugué con las posibilidades gráficas de la resolución de un problema matemático. Me gusta la imagen resultante porque hace evidente el peso del centro, ese punto desde el que arrancan y al que llegan todos los ciclos (ciclos que se sobrescriben en el afán de un resultado inalcanzable). Cito aquí a la obra de Ben Laposky, un estadounidense que por estar jugando en el mismísimo centro de lo que la historia posterior reconoce como punto de origen, se le considera hoy por hoy pionero de esta estructura artificial llamada arte multimedia.
 
-Rescato la experimentación como única forma posible de expresión, ya sea mediante palabras, movimientos, imágenes, máquinas, actos, etc. Jugar es una forma de experimentar. Leer puede ser útil para ciertos procesos, pero leer historia y buscarse a sí en ella esconde una trampa de la que intentaré escapar: la historia contiene solamente lo que el poder necesita entender, no lo que cada territorio expresa. 
+Rescato la experimentación como base de la expresión, ya sea en palabras, actos, imágenes, máquinas, ideas, etc, etc. Jugar es una forma accesible de experimentar. Leer puede ser útil para ciertos procesos, pero leer historia y buscarse a sí en ella esconde una trampa de la que intentaré escapar: la historia contiene solamente lo que el poder necesita entender, no lo que cada territorio expresa. 
 
 <br>
 
@@ -38,7 +38,7 @@ Rescato la experimentación como única forma posible de expresión, ya sea medi
 
 <br>
 
-La conjetura de Collatz, o de "3n+1", propone que aplicando reiterativamente dos reglas* simples sobre un número cualquiera, se obtendrá una serie que acabará llegando siempre a 1. Es fácil de calcularla en números pequeños y hasta el momento, con cualquier número imaginable que se haya intentado se mantiene la conjetura como verdadera. Pero la pequeñez y la imaginación son relativas, dependen de lo que se tome como referencia de origen. Con números lejanos el proceso se vuelve extenso hasta lo absurdo. La dificultad está en que, contrario a lo aparentemente simple del problema, no ha sido posible darle solución mediante una demostración completa. Es decir, no se entiende por qué sucede, es imposible saber si se cumple siempre o solo en los casos que se conocen.
+La conjetura de Collatz, o de "3n+1", propone que aplicando reiterativamente dos reglas* simples sobre un número cualquiera, se obtendrá una serie que acabará llegando siempre a 1. Es fácil de calcularla en números pequeños y hasta el momento, con cualquier número imaginable que se haya intentado se mantiene la conjetura como verdadera. Pero la pequeñez y la imaginación son relativas, dependen de lo que se tome como referencia de origen. Con números lejanos el proceso se vuelve extenso hasta lo absurdo. El problema está en que, pese a lo aparentemente simple de las premisas, no ha sido posible darle solución mediante una demostración completa. Es decir, no se entiende por qué sucede, es imposible saber si se cumple siempre o es una particularidad de los casos que se conocen.
 
 (*) Las reglas son las siguientes: a partir de un número entero positivo cualquiera, evaluar si es par o no. En caso par dividir por 2. En caso impar multiplicar por 3 y sumar 1. Volver a aplicar las mismas instrucciones sobre el resultado obtenido hasta (eventualmente) llegar a 1.
 
