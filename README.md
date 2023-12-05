@@ -76,6 +76,11 @@ La espiral se expande, no se detiene nunca. Lo humano como concepto es un dispos
 <br>
 <i>Buenos Aires
 <br>2023</i>
+<br>
+<br>
+<br>
+<a href="https://mj-una.github.io/am1-tp1-collatz/" target="_blank" rel="noopener"><b>Click aquí para jugar<br>↳↳↳ ☆ OESA ☆ ↲↲↲</b></a>
+<br>
 </div>
 <br>
 
